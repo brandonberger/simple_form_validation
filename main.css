@@ -1,0 +1,219 @@
+body {
+	background-image: url('assets/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+	width: 1440px;
+	margin: 0 auto;
+	height: 900px;
+	display: flex;
+}
+
+.form-section {
+	background: #ffffff;
+	width: 591px;
+	height: 100%;
+}
+
+.form-section .form-container {
+	padding: 50px 70px;
+	margin: 0 auto;
+}
+
+.form-section .title {
+	color: #794CF8;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+
+.form-section .subtitle {
+	color: #9B9B9B;
+	font-size: 18px;
+	padding-top: 23px;
+}
+
+.form-section label {
+	color: #C4C4C4;
+	font-size: 17px;
+}
+
+.form-section .field {
+	margin-top: 60px;
+}
+
+.form-section .half {
+	width: 210px;
+	display: inline-block;
+}
+
+.form-section .half:nth-child(even) {
+	margin-left: 25px;
+}
+
+.form-section input:not([type="checkbox"]) {
+	height: 34px;
+	margin-top: 15px;
+	border: 2px solid rgba(209, 209, 209, 0.1);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	width: 100%; 
+	background: #FFFFFF;
+	color: #8A8A8A;
+	font-size: 22px;
+	padding-left:13px;
+    font-family: 'Roboto';
+}
+
+.form-section input[type="checkbox"] {
+	background: #ffffff;
+	height: 20px;
+	width: 20px;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	-webkit-appearance:	none;
+	position: absolute;
+    top: -2px;
+}
+
+.form-section .checkbox-field {
+	position: relative;
+	margin-top: 35px !important;
+
+}
+
+.form-section .checkbox-field label span.agreement {
+	font-size: 14.5px;
+	color: #8A8A8A;
+	margin-left:35px;
+}
+
+.form-section .checkbox-field label span.agreement a, .contact a {
+	color: #794CF8;
+	font-weight: 500;
+}
+
+.form-section .half input {
+	width: 192px;
+}
+
+.form-section input[type="submit"] {
+	height: 63px;
+	background: #794CF8;
+	color: white;
+	font-size: 32px;
+	text-align: center;
+}
+
+
+.form-section input::placeholder {
+	color: #C4C4C4;
+}
+
+.form-section input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*height: 25px;*/
+  /*width: 25px;*/
+  /*background-color: #eee;*/
+  background: #ffffff;
+  height: 20px;
+  width: 20px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.form-section input[type="checkbox"]:hover ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-section input[type="checkbox"]:checked ~ .checkmark {
+  background-color: #794CF8;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-section input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-section .checkmark:after {
+  left: 6px;
+  top: 2.5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.contact {
+	text-align: center;
+	color: #8A8A8A;
+	letter-spacing: 0.02em;
+	font-size: 14px;
+}
+
+
+.hero-section {
+	background-image: url('assets/form-background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 900px;
+	width: 849px;
+}
+
+.hero-section .hero-container {
+	margin-left:74px;
+	margin-top: 317px;
+}
+
+.hero-section .title {
+	font-size: 96px;
+	letter-spacing: 0.1em;
+	color: #FFFFFF;
+	text-shadow: -8px 5px 4px rgba(0, 0, 0, 0.1);
+	font-family: 'Julius Sans One', sans-serif;
+	padding-bottom: 10px;
+}
+
+
+.hero-section .location {
+	letter-spacing: 0.04em;
+	color: #FFFFFF;
+	text-shadow: -8px 5px 4px rgba(0, 0, 0, 0.1);
+	font-weight: 300;
+	font-size: 45px;
+	padding-bottom: 10px;
+
+}
+
+.hero-section .event {
+	letter-spacing: 0.04em;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 55px;
+	text-shadow: -8px 5px 4px rgba(0, 0, 0, 0.1);
+}
